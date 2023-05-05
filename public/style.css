@@ -12,6 +12,17 @@ body {
     font-size: 80px;
 }
 
+#genres {
+  width: 250px;
+  font-size: 20px;
+  padding: 7px 10px;
+  border-style: none;
+  background-color: #ffffff;
+  color: #7f0920;
+  font-family: "Fredoka One", sans-serif;
+  border-radius: 5px;
+}
+
 #genreForm, #playBtn {
     text-align: center;
     margin: 0px auto;
