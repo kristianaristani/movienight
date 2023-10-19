@@ -117,8 +117,8 @@ similar-movies-container {
 .similarMovie {
   width: 250px; /* Reduce the width to 25% with some spacing */
   margin-bottom: 5px; /* Add margin between similar movies */
-  //box-sizing: border-box; /* Include padding and border in width calculation */
+  
   padding: 5px;
   border: 1px solid #ccc;
-  //background-color: #f9f9f9;
+  
 }
