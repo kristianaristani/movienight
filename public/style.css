@@ -108,17 +108,17 @@ select {
     background-color: #c74a4a;
     color: #910000;
 }
-similar-movies-container {
-  display: flex; /* Use flexbox for the layout */
-  flex-wrap: wrap; /* Wrap items to the next row when they don't fit */
-  justify-content: space-between; /* Distribute space between items */
+.similar-movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
 }
 
 .similarMovie {
-  width: 250px; /* Reduce the width to 25% with some spacing */
-  margin-bottom: 5px; /* Add margin between similar movies */
-  
+  width: calc(30% - 10px); 
+  margin: 5px; 
   padding: 5px;
   border: 1px solid #ccc;
-  
+  box-sizing: border-box; 
+}
 }
