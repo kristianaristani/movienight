@@ -11,6 +11,14 @@ body {
     font-family: 'Staatliches', sans-serif;
     font-size: 80px;
 }
+ #similarTitle {
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    color: #FFC72C;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 50px;
+}
 
 #genres {
   width: 250px;
