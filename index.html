@@ -1,42 +1,84 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>🍿Movie Night🍿</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Hedvig+Letters+Serif:opsz@12..24&family=Playfair+Display&family=Spectral&display=swap" rel="stylesheet"/>
+
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Fredoka+One&family=Questrial&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/style.css">
-    <script defer src="https://kit.fontawesome.com/e918d10e90.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/public/style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/e918d10e90.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="public/helpers.js"></script>
     <script defer src="public/script.js"></script>
   </head>
   <body>
     <header>
-      <h1 id="appTitle">🍿MOVIE NIGHT🍿</h1>
+      <h1 id="appTitle" class="appTitle">MOVIE NIGHT</h1>
+      <img class = 'logo' src="./transp-logo.png"/>
     </header>
-    <form id="genreForm">
-      <label>Choose a genre:</label>
-      <select name="genres" id="genres">
-      </select>
-    </form>
-    <button id="playBtn">Suggest a movie!</button>
-    <div id="movieInfo">
-      <div id="moviePoster"></div>
-      <div id="movieText"></div>
-    </div>
-    <div id="likeOrDislikeBtns" hidden>
-      <button id="likeBtn"><i class="fa-solid fa-thumbs-up"></i></button>
-      <button id="dislikeBtn"><i class="fa-solid fa-thumbs-down"></i></button>
+    <div class="content">
+      <div class="choose-genre">
+        <form id="genreForm">
+          <label class="choose">Choose a genre:</label>
+          <select name="genres" id="genres"></select>
+        </form>
+        <button id="playBtn">Suggest a movie!</button>
       </div>
-    <h2 id="similarTitle">Similar Movies</h2>
-      <div id="similarMovies" class="similar-movies-container"></div>
-    
+      
+        <div id="movie-info">
+          <div id="movie-poster" class="movie-poster poster"></div>
+          <div id="movie-text" class="movie-text  text"></div>
+        </div>
+      
+
+      <div id="likeOrDislikeBtns" hidden>
+        <button id="likeBtn"><i class="fa-solid fa-thumbs-up"></i></button>
+        <button id="dislikeBtn"><i class="fa-solid fa-thumbs-down"></i></button>
+      </div>
+      
+      <h1 id="similar-movies-title">Similar Movies</h1>
+
+      <div id="similar-movies" class="similar-movies-container">
+        <div class="similar-movie double col">
+          <div id="similar-movie-1-info ">
+            <div
+              id="similar-movie-1-poster"
+              class="movie-poster col-item"
+            ></div>
+            <div id="similar-movie-1-text" class="movie-text col-item"></div>
+          </div>
+        </div>
+        <div class="similar-movie col">
+          <div id="similar-movie-2-info">
+            <div
+              id="similar-movie-2-poster"
+              class="movie-poster col-item"
+            ></div>
+            <div id="similar-movie-2-text" class="movie-text col-item"></div>
+          </div>
+        </div>
+        <div class="similar-movie col">
+          <div id="similar-movie-3-info">
+            <div
+              id="similar-movie-3-poster"
+              class="movie-poster col-item"
+            ></div>
+            <div id="similar-movie-3-text" class="movie-text col-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
   </body>
 </html>
