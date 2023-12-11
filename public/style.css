@@ -1,133 +1,278 @@
-body {
-    background-color: #7f0920;
-    color: #0a0408;
+#appTitle,
+#playBtn,
+.choose,
+.choose-genre,
+#movie-info,
+#similar-movies-title,
+.similar-movies-container,
+#genres {
+  font-family: "Hedvig Letters Sans", sans-serif;
+}
+
+header{
+  background-color: #cd3c2a;
+  height: 90px;
+  display: flex;
+  font-size: 2rem;
+  margin-left: -1em;
+  margin-right: -1em;
+  margin-top: -0.5em;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: white;
 }
 
 #appTitle {
-    text-align: center;
-    margin: 0px auto;
-    display: block;
-    color: #FFC72C;
-    font-family: 'Staatliches', sans-serif;
-    font-size: 80px;
-}
- #similarTitle {
-    text-align: center;
-    margin: 0px auto;
-    display: block;
-    color: #FFC72C;
-    font-family: 'Fredoka One', sans-serif;
-    font-size: 50px;
-     
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  margin:0 auto;
 }
 
+#movie-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.choose {
+  font-size: 16px;
+}
 #genres {
-  width: 250px;
-  font-size: 20px;
-  padding: 7px 10px;
-  border-style: none;
-  background-color: #ffffff;
-  color: #7f0920;
-  font-family: "Fredoka One", sans-serif;
-  border-radius: 5px;
-}
-
-#genreForm, #playBtn {
-    text-align: center;
-    margin: 0px auto;
-    display: block;
-    color: #FFC72C;
-    font-family: 'Fredoka One', sans-serif;
-}
-
-#movieInfo {
-    width:  65%;
-    margin:  32px auto;
-}
-
-#movieInfo:after {
-    content:  "";
-    display:  table;
-    clear:  both;
-}
-
-#moviePoster, #movieText {
-    width:  50%;
-    float:  left;
-}
-
-img#moviePoster {
-    width:  100%;
-    height:  auto;
-    display:  block;
-    margin:  auto;
-}
-
-#movieText,#similarMovies {
-    font-family: 'Questrial';
-    color: #FEFBEA;
-    line-height: 1.25;
-}
-
-#movieTitle, #movieOverview {
-    padding:  32px;
+  font-size: 16px;
+   
 }
 
 #playBtn {
-    margin-top: 20px;
-    font-size: 25px;
-    padding: 7px 10px;
-    border-radius: 10px;
-    border-style: none;
-    background-color: #FFC72C;
-    color: #7f0920;
-    cursor:  pointer;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #f8cd58;
+  color: black;
+  margin-top: 10px;
+  border-radius: 1em;
 }
 
-label {
-    display: block;
-    font-size: 35px;
-    margin-bottom: 5px;
+#playBtn:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
 
-select {
-    width: 200px;
-    height: auto;
+
+#similar-movies-title {
+  display:none;
+  text-align: center;
 }
 
-#likeOrDislikeBtns {
-    text-align: center;
-    margin: 0px auto;  
-}
-
-#likeBtn, #dislikeBtn {
-    padding: 15px 25px;
-    font-size: 25px;
-    border-radius: 12px;
-    border-style: none;
-    cursor:  pointer;
-}
-
-#likeBtn {
-    background-color: #249e57;
-    color: darkgreen;
-}
-
-#dislikeBtn {
-    background-color: #c74a4a;
-    color: #910000;
-}
-.similar-movies-container {
+#movie-overview {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: center;
+  align-content: center;
+  font-size: 1em;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 30px;
+  align-self: center;
 }
 
-.similarMovie {
-  width: calc(30% - 10px); 
-  margin: 5px; 
-  padding: 5px;
-  border: 1px solid #ccc;
-  box-sizing: border-box; 
+
+
+#movie-info img {
+  padding-left: 2em;
+  padding-right: 2em;
+  max-width: 300px;
 }
+
+.similar-movie {
+  background-color: #cd3c2a;
+  color: white;
+  margin: 0 0 1em;
 }
+
+#tagline {
+  font-size: 20px;
+  font-style: italic;
+}
+
+
+
+body {
+  background-color: #eae6da;
+}
+
+.choose-genre {
+  margin: 0 auto;
+  max-width: 50%;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+
+
+
+
+.similar-movie .movie-title {
+  display: flex;
+  padding-top: 30px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.movie-text {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+}
+
+#movie-text {
+  text-align: center;
+  padding-left: 3em;
+  padding-right: 3em;
+  max-width: 50%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 300px;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+.similar-movies img {
+  max-width: 90%;
+  margin: 0 auto;
+  
+}
+
+content {
+  font-size: 1em;
+  padding: 1em;
+}
+
+.box a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+  background: white;
+  transition: all 0.2s;
+}
+
+@media screen and (min-width: 650px) {
+  .similar-movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .double {
+    flex: 2 0 100%;
+  }
+
+  .double img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .similar-movie {
+    display: flex;
+    width: calc(50% - 0.5em);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .similar-movies-container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .similar-movie {
+    width: calc(33% - 1em);
+  }
+
+  .double {
+    flex: none;
+  }
+  .double img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+ 
+@media screen and (min-width: 420px) and (max-width: 570px) {
+  #appTitle {
+    font-size: 1.5em;
+    margin:0 auto;
+  }
+   header {
+    height:150px;
+  }
+
+
+  #movie-overview {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 571px) and (max-width: 750px) {
+  #appTitle {
+    font-size: 2em;
+  }
+
+   header {
+    height:200px;
+  }
+
+  #movie-overview {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  #appTitle {
+    font-size: 2em;
+  }
+  header {
+    height:200px;
+  }
+
+ 
+  #movie-overview {
+    font-size: 1.1em;
+  }
+
+  .similar-movie #movie-overview {
+    font-size: 1.2em;
+  }
+}
+
+
+
+  .logo {height: 4rem;
+ 
+    width: auto;}
+
+    #appTitle, .logo {
+      margin: 10px; 
+      padding: 10px; 
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
